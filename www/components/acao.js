@@ -34,7 +34,7 @@ function igual(){
     var resultado = 0;
     
     if(operador == "+"){
-        resultado = parseInt(valor1) + parseInt(valor2);
+        resultado = valor1 + valor2;
     }
     // foi colocado os else's 
     else if(operador == "-"){
