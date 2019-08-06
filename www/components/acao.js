@@ -32,31 +32,31 @@ function ponto(){
 function igual(){
     valor2 = parseFloat(document.getElementById("visor").value);
     var resultado = 0;
-
     
     if(operador == "+"){
-        resultado = valor1 + valor2;
+        resultado = parseInt(valor1) + parseInt(valor2);
     }
-    if(operador == "-"){
+    // foi colocado os else's 
+    else if(operador == "-"){
         resultado = valor1 - valor2;
     }
-    if(operador == "/"){
+    else if(operador == "/"){
         resultado = valor1 / valor2;
     }
-    if(operador == "*"){
+    else if(operador == "*"){
         resultado = valor1 * valor2;
     }
    
-    if(operador == "raiz"){
-      resultado = alert(Math.sqrt(parseInt(valor1)));
+    else if(operador == "raiz"){
+      resultado = Math.sqrt(parseInt(valor1))
     }
 
-    if(operador == "^"){
+    else if(operador == "^"){
         resultado = Math.pow(valor1, valor2);
     }
 
 
-    if(operador = "%"){
+    else if(operador = "%"){
       resultado = (valor1 / 100) * valor2; 
     }
 
